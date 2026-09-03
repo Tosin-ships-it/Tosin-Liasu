@@ -1,24 +1,38 @@
 /* -------------------------------------------------------------------
    Tosin Liasu Personal Portfolio — Design System Tokens
-   Light Editorial Direction
+   Section Colour System — Integrated Purple Brand Identity
    ------------------------------------------------------------------- */
 
 :root {
-  /* Color Palette — Warm Editorial + Deep Charcoal + Restrained Indigo */
-  --bg-primary: #FBFBF9;       /* Soft Warm Alabaster main background */
-  --bg-surface: #FFFFFF;       /* Pure White card surfaces */
-  --bg-subtle: #F3F3EF;        /* Light warm neutral surface fill */
+  /* Core Brand Colors */
+  --accent-primary: #4F46E5;        /* Studio Indigo */
+  --accent-hover: #4338CA;          /* Darker Indigo for hover/active states */
+  --accent-subtle: #EEF2FF;         /* Light Indigo Tint for active badges */
+  --accent-border: #C7D2FE;         /* Soft Indigo border accent */
+  --accent-purple-tag: #EDE9FE;     /* Soft purple badge fill */
 
-  --text-primary: #121619;     /* Deep Mineral Charcoal for high contrast readability */
-  --text-secondary: #5A646E;   /* Muted Slate Grey for roles, dates, metadata */
-  --text-tertiary: #87929D;    /* Subtle captions and secondary details */
+  /* Section Colour System (Restrained Light Lavender & White Sequence) */
+  --bg-primary: #FAF9FF;            /* Soft off-white main background with subtle lavender tint */
+  --bg-surface: #FFFFFF;            /* Pure White card surfaces */
+  --bg-subtle: #F3F0FF;             /* Light lavender surface fill */
 
-  --accent-primary: #4F46E5;   /* Restrained Studio Indigo */
-  --accent-hover: #4338CA;     /* Darker Indigo for active states */
-  --accent-subtle: #EEF2FF;    /* Light Indigo Tint for active tag backgrounds */
+  --bg-section-hero: #FAF9FF;       /* Hero: Warm off-white / subtle lavender tint */
+  --bg-section-value: #F4F3FF;      /* Positioning / Value: Soft lavender */
+  --bg-section-work: #FFFFFF;       /* Selected Work: Pure white */
+  --bg-section-process: #F6F5FB;    /* Process / Thinking: Light purple-grey */
+  --bg-section-building: #F3F0FF;   /* Building / Learning: Soft lavender tint */
+  --bg-section-shiplog: #FFFFFF;    /* Ship Log: Pure white */
+  --bg-section-contact: #EEF2FF;    /* Contact: Slightly deeper light lavender treatment */
 
-  --border-light: #EBEAE5;     /* Soft warm border for cards and dividers */
-  --border-medium: #D8D7D2;    /* Medium contrast border for inputs and hover states */
+  /* Typography Colors */
+  --text-primary: #121619;          /* Deep Mineral Charcoal for high contrast readability */
+  --text-secondary: #5A646E;        /* Muted Slate Grey for roles, dates, metadata */
+  --text-tertiary: #87929D;         /* Subtle captions and secondary details */
+
+  /* Borders & Hairline Dividers */
+  --border-light: #E8E5F5;          /* Soft lavender border for cards */
+  --border-medium: #D5D0EA;         /* Medium contrast lavender border for hover states */
+  --border-subtle-purple: #E4E0FF;  /* Light purple section divider line */
 
   /* Typography Families */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -31,7 +45,7 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* Fluid Typography Scale (using clamp for mobile-first scaling) */
+  /* Fluid Typography Scale */
   --font-size-display: clamp(2.5rem, 5vw, 4rem);    /* 40px - 64px (Hero Main Title) */
   --font-size-h1: clamp(2rem, 4vw, 3rem);           /* 32px - 48px (Page Title) */
   --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);      /* 24px - 36px (Section Heading) */
@@ -42,8 +56,8 @@
 
   /* Line Heights */
   --line-height-heading: 1.15;
-  --line-height-body: 1.65;                         /* Comfortable editorial line height */
-  --line-height-tight: 1.3;
+  --line-height-body: 1.65;
+  --line-height-tight: 1.25;
 
   /* Spacing Scale (8pt Grid System) */
   --space-3xs: 0.25rem;   /* 4px */
@@ -67,8 +81,8 @@
   --container-reading: 720px;
 
   /* Shadows */
-  --shadow-subtle: 0 4px 20px -2px rgba(18, 22, 25, 0.04);
-  --shadow-hover: 0 12px 32px -4px rgba(18, 22, 25, 0.08);
+  --shadow-subtle: 0 4px 20px -2px rgba(79, 70, 229, 0.05);
+  --shadow-hover: 0 12px 32px -4px rgba(79, 70, 229, 0.1);
 
   /* Transitions */
   --transition-fast: 150ms ease;
