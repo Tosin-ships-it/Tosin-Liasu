@@ -245,6 +245,61 @@ a:hover {
 .gap-sm { gap: var(--space-sm); }
 .gap-md { gap: var(--space-md); }
 
+/* --- Hero Layout & Portrait Framing --- */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: var(--space-2xl);
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--accent-border);
+  box-shadow: 0 16px 36px -12px rgba(79, 70, 229, 0.12);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.hero-portrait-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px -12px rgba(79, 70, 229, 0.18);
+  border-color: var(--accent-primary);
+}
+
+.hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
 /* ===================================================================
    4. UI COMPONENTS (Buttons, Badges, Header, Footer)
    =================================================================== */
