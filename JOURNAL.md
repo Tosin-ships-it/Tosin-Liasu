@@ -44,3 +44,18 @@
    - Working Approach section outlining 3 core pillars (Discovery, Product Thinking, Building).
    - Contact CTA & Footer featuring exact clickable `mailto:liasutosin@gmail.com` email link and Behance profile link (`be.net/tl332`).
 
+---
+
+## 2026-09-03 — Stage 4: Work Gallery (`work.html`) & Dynamic Case Study System (`case-study.html`)
+
+### Key Implementation Milestones
+1. **Work Directory (`work.html`)**: Built complete Work Gallery page featuring:
+   - Page header and lead summary.
+   - Interactive Category Filter Bar allowing real-time filtering between *All Projects*, *Built Products*, *Product Design*, and *Visual Design* using categories defined in `projects.js`.
+   - Dynamic grid rendering via `renderProjectGrid()`.
+2. **Dynamic Web-Native Case Study Viewer (`case-study.html`)**: Built dynamic case study viewer utilizing:
+   - `URLSearchParams` to extract project `?id=` from URL.
+   - `getProjectById()` to load project data from `js/data/projects.js`.
+   - `renderCaseStudy()` helper to render structured metadata, problem context, key design decisions, and truthful outcomes.
+   - Graceful fallback view ("Project Not Found") with a direct link back to `work.html` when an invalid ID is requested.
+3. **Contact Consistency**: Verified exact `mailto:liasutosin@gmail.com` email link across all pages and footers.

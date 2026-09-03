@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — Tosin Liasu Portfolio</title>
+  <meta name="description" content="Web-native project case study by Tosin Liasu, UI/UX Designer & Product Builder.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Tosin Liasu</a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="shiplog.html" class="nav-link">Ship Log</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dynamic Case Study Mounting Section -->
+    <div class="container section" id="case-study-container" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
+      <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- Contact CTA Section -->
+    <section class="section" id="contact" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container text-center" style="text-align: center; max-width: 640px;">
+        <span class="badge" style="margin-bottom: var(--space-xs);">Get in Touch</span>
+        <h2 class="section-title" style="margin-bottom: var(--space-sm);">Let's Work Together</h2>
+        <p class="text-muted" style="margin-bottom: var(--space-lg);">
+          Interested in collaboration, design inquiries, or product conversations? Reach out directly via email:
+        </p>
+        <a href="mailto:liasutosin@gmail.com" class="btn btn-primary font-mono" style="font-size: 1rem; padding: 0.875rem 1.75rem;">
+          liasutosin@gmail.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="font-family: var(--font-heading); font-size: 1rem; display: block; margin-bottom: 4px;">Tosin Liasu</strong>
+        <p class="text-small text-muted" style="margin-bottom: 0;">UI/UX Designer & Product Builder</p>
+      </div>
+
+      <ul class="footer-socials">
+        <li><a href="mailto:liasutosin@gmail.com">Email</a></li>
+        <li><a href="https://be.net/tl332" target="_blank" rel="noopener">Behance</a></li>
+      </ul>
+
+      <div class="footer-copy">
+        &copy; 2026 Tosin Liasu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script type="module">
+    import { getProjectById } from './js/data/projects.js';
+    import { renderCaseStudy } from './js/renderers.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('case-study-container');
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get('id');
+
+      const project = getProjectById(projectId);
+
+      if (project) {
+        document.title = `${project.title} — Case Study | Tosin Liasu`;
+        renderCaseStudy(container, project);
+      } else {
+        document.title = `Project Not Found — Tosin Liasu Portfolio`;
+        container.innerHTML = `
+          <div style="text-align: center; max-width: 480px; margin: var(--space-3xl) auto;">
+            <span class="badge" style="margin-bottom: var(--space-sm);">Notice</span>
+            <h1 class="page-title" style="margin-bottom: var(--space-xs);">Project Not Found</h1>
+            <p class="text-muted" style="margin-bottom: var(--space-lg);">
+              The requested project case study could not be found or may have been moved.
+            </p>
+            <a href="work.html" class="btn btn-primary">&larr; Back to Work Directory</a>
+          </div>
+        `;
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
