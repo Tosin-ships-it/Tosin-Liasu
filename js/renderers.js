@@ -172,15 +172,15 @@ export function renderShipLogEntries(containerElement, entries) {
   }
 
   containerElement.innerHTML = entries.map(entry => `
-    <article class="shiplog-card" style="padding: var(--space-lg); background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: var(--space-md);">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xs);">
+    <article class="shiplog-card" id="${entry.id}">
+      <div class="shiplog-card-header">
         <span class="badge">${entry.category}</span>
-        <time class="text-small text-muted font-mono">${entry.date}</time>
+        <time class="text-small text-muted font-mono" datetime="${entry.date}">${entry.date}</time>
       </div>
       <h3 style="margin-bottom: var(--space-xs);">${entry.title}</h3>
       <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">${entry.summary}</p>
       <p style="font-size: var(--font-size-sm);">${entry.content}</p>
-      <div style="display: flex; gap: var(--space-2xs); margin-top: var(--space-sm);">
+      <div class="shiplog-card-tags">
         ${(entry.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}
       </div>
     </article>

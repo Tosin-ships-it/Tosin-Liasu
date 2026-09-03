@@ -59,3 +59,23 @@
    - `renderCaseStudy()` helper to render structured metadata, problem context, key design decisions, and truthful outcomes.
    - Graceful fallback view ("Project Not Found") with a direct link back to `work.html` when an invalid ID is requested.
 3. **Contact Consistency**: Verified exact `mailto:liasutosin@gmail.com` email link across all pages and footers.
+
+---
+
+## 2026-09-03 — Stage 5: Secondary Page Suite (`about.html`, `shiplog.html`, `contact.html`)
+
+### Key Implementation Milestones
+1. **About Page (`about.html`)**: Built background & strategy page featuring:
+   - Positioning statement as UI/UX Designer expanding into frontend development and AI-assisted workflows.
+   - Structured 4-pillar progression cards (*01 / DESIGN*, *02 / PRODUCT THINKING*, *03 / BUILDING*, *04 / LEARNING*).
+   - Current tool stack showcase tags (Figma, HTML5, CSS3, JavaScript, Git/GitHub, AI-Assisted Tools).
+2. **Ship Log Page (`shiplog.html`)**: Built dynamic development journal page featuring:
+   - Dynamic rendering of chronological build entries from `js/data/shiplog.js` using `renderShipLogEntries()`.
+   - Clean tags, mono timestamps, and category badges per entry.
+3. **Contact Page (`contact.html`)**: Built dedicated contact options page featuring:
+   - Direct Email card (`liasutosin@gmail.com`).
+   - GitHub profile card (`github.com/Tosin-ships-it`).
+   - Behance portfolio card (`be.net/tl332`).
+4. **Design System & Component Refinement (`css/main.css`)**: Added reusable utility classes (`.info-card`, `.shiplog-card`, `.contact-card`, `.text-center`) eliminating redundant inline styles.
+5. **Global Footer Alignment**: Updated footer socials across all pages (`index.html`, `work.html`, `case-study.html`, `about.html`, `shiplog.html`, `contact.html`) to include GitHub link alongside Email and Behance.
+

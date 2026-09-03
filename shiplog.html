@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ship Log — Tosin Liasu Portfolio</title>
+  <meta name="description" content="Development journal and learning log documenting Tosin Liasu's portfolio and project builds.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Tosin Liasu</a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="shiplog.html" class="nav-link active">Ship Log</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Ship Log Header Section -->
+    <section class="section" style="padding-top: var(--space-3xl); padding-bottom: var(--space-xl);">
+      <div class="container">
+        <span class="badge" style="margin-bottom: var(--space-xs);">Development Journal</span>
+        <h1 class="page-title">Ship Log</h1>
+        <p class="lead">
+          Chronological development journal documenting project builds, frontend learning milestones, and AI-assisted workflows.
+        </p>
+      </div>
+    </section>
+
+    <!-- Ship Log Entries Section -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--space-3xl);">
+      <div class="container container-reading">
+        <div id="shiplog-entries-container">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="section" id="contact" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container text-center" style="text-align: center; max-width: 640px;">
+        <span class="badge" style="margin-bottom: var(--space-xs);">Get in Touch</span>
+        <h2 class="section-title" style="margin-bottom: var(--space-sm);">Let's Work Together</h2>
+        <p class="text-muted" style="margin-bottom: var(--space-lg);">
+          Interested in collaboration, design inquiries, or product conversations? Reach out directly via email:
+        </p>
+        <a href="mailto:liasutosin@gmail.com" class="btn btn-primary font-mono" style="font-size: 1rem; padding: 0.875rem 1.75rem;">
+          liasutosin@gmail.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="font-family: var(--font-heading); font-size: 1rem; display: block; margin-bottom: 4px;">Tosin Liasu</strong>
+        <p class="text-small text-muted" style="margin-bottom: 0;">UI/UX Designer & Product Builder</p>
+      </div>
+
+      <ul class="footer-socials">
+        <li><a href="mailto:liasutosin@gmail.com">Email</a></li>
+        <li><a href="https://github.com/Tosin-ships-it" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://be.net/tl332" target="_blank" rel="noopener">Behance</a></li>
+      </ul>
+
+      <div class="footer-copy">
+        &copy; 2026 Tosin Liasu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script type="module">
+    import { getShipLogEntries } from './js/data/shiplog.js';
+    import { renderShipLogEntries } from './js/renderers.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('shiplog-entries-container');
+      const entries = getShipLogEntries();
+      renderShipLogEntries(container, entries);
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

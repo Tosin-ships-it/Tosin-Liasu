@@ -458,6 +458,73 @@ a:hover {
   margin-top: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* --- Info & Feature Cards --- */
+.info-card {
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.info-card:hover {
+  border-color: var(--border-medium);
+}
+
+/* --- Ship Log Cards --- */
+.shiplog-card {
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.shiplog-card:hover {
+  border-color: var(--border-medium);
+}
+
+.shiplog-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.shiplog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-top: var(--space-sm);
+}
+
+/* --- Contact Cards --- */
+.contact-card {
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.contact-card:hover {
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+.contact-card-body {
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
 /* --- Footer --- */
 .site-footer {
   background-color: var(--bg-primary);
@@ -516,3 +583,4 @@ a:hover {
     scroll-behavior: auto !important;
   }
 }
+
