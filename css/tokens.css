@@ -1,0 +1,76 @@
+/* -------------------------------------------------------------------
+   Tosin Liasu Personal Portfolio — Design System Tokens
+   Light Editorial Direction
+   ------------------------------------------------------------------- */
+
+:root {
+  /* Color Palette — Warm Editorial + Deep Charcoal + Restrained Indigo */
+  --bg-primary: #FBFBF9;       /* Soft Warm Alabaster main background */
+  --bg-surface: #FFFFFF;       /* Pure White card surfaces */
+  --bg-subtle: #F3F3EF;        /* Light warm neutral surface fill */
+
+  --text-primary: #121619;     /* Deep Mineral Charcoal for high contrast readability */
+  --text-secondary: #5A646E;   /* Muted Slate Grey for roles, dates, metadata */
+  --text-tertiary: #87929D;    /* Subtle captions and secondary details */
+
+  --accent-primary: #4F46E5;   /* Restrained Studio Indigo */
+  --accent-hover: #4338CA;     /* Darker Indigo for active states */
+  --accent-subtle: #EEF2FF;    /* Light Indigo Tint for active tag backgrounds */
+
+  --border-light: #EBEAE5;     /* Soft warm border for cards and dividers */
+  --border-medium: #D8D7D2;    /* Medium contrast border for inputs and hover states */
+
+  /* Typography Families */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+
+  /* Font Weight Tokens */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Fluid Typography Scale (using clamp for mobile-first scaling) */
+  --font-size-display: clamp(2.5rem, 5vw, 4rem);    /* 40px - 64px (Hero Main Title) */
+  --font-size-h1: clamp(2rem, 4vw, 3rem);           /* 32px - 48px (Page Title) */
+  --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);      /* 24px - 36px (Section Heading) */
+  --font-size-h3: clamp(1.25rem, 2vw, 1.5rem);      /* 20px - 24px (Card Heading) */
+  --font-size-body: clamp(1rem, 1.1vw, 1.125rem);   /* 16px - 18px (Editorial Body Copy) */
+  --font-size-sm: 0.875rem;                         /* 14px (Metadata, Tags) */
+  --font-size-xs: 0.75rem;                          /* 12px (Small Badges) */
+
+  /* Line Heights */
+  --line-height-heading: 1.15;
+  --line-height-body: 1.65;                         /* Comfortable editorial line height */
+  --line-height-tight: 1.3;
+
+  /* Spacing Scale (8pt Grid System) */
+  --space-3xs: 0.25rem;   /* 4px */
+  --space-2xs: 0.5rem;    /* 8px */
+  --space-xs: 0.75rem;    /* 12px */
+  --space-sm: 1rem;       /* 16px */
+  --space-md: 1.5rem;     /* 24px */
+  --space-lg: 2rem;       /* 32px */
+  --space-xl: 3rem;       /* 48px */
+  --space-2xl: 4.5rem;    /* 72px */
+  --space-3xl: 6rem;      /* 96px */
+
+  /* Border Radii */
+  --radius-sm: 6px;       /* Tags, buttons */
+  --radius-md: 12px;      /* Cards, image containers */
+  --radius-lg: 20px;      /* Featured cards, hero sections */
+  --radius-full: 9999px;  /* Rounded pills, avatars */
+
+  /* Container Widths */
+  --container-max: 1200px;
+  --container-reading: 720px;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px -2px rgba(18, 22, 25, 0.04);
+  --shadow-hover: 0 12px 32px -4px rgba(18, 22, 25, 0.08);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
