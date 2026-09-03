@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tosin Liasu — UI/UX Designer & Product Builder</title>
+  <meta name="description" content="Personal portfolio of Tosin Liasu, a UI/UX Designer expanding into frontend development and AI-assisted workflows. Focused on design, product thinking, and building.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Tosin Liasu</a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="shiplog.html" class="nav-link">Ship Log</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" style="padding-top: var(--space-3xl); padding-bottom: var(--space-2xl);">
+      <div class="container">
+        <div class="badge" style="margin-bottom: var(--space-md); background-color: var(--accent-subtle); color: var(--accent-primary); border-color: transparent;">
+          UI/UX Designer & Product Builder
+        </div>
+
+        <h1 class="display-title" style="max-width: 22ch; margin-bottom: var(--space-md);">
+          Designing thoughtful digital products. Learning to build what I design.
+        </h1>
+
+        <p class="lead" style="margin-bottom: var(--space-lg);">
+          UI/UX Designer expanding into frontend development and AI-assisted workflows.
+          Bridging user experience design with browser execution.
+        </p>
+
+        <div class="progression-pill" style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs); padding: 0.5rem 1rem; background-color: var(--bg-subtle); border: 1px solid var(--border-light); border-radius: var(--radius-full); font-size: var(--font-size-xs); font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: var(--space-xl);">
+          <span>DESIGN</span>
+          <span style="color: var(--text-tertiary);">&rarr;</span>
+          <span>PRODUCT THINKING</span>
+          <span style="color: var(--text-tertiary);">&rarr;</span>
+          <span>BUILDING</span>
+          <span style="color: var(--text-tertiary);">&rarr;</span>
+          <span>LEARNING</span>
+        </div>
+
+        <div class="hero-actions" style="display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+          <a href="#featured-work" class="btn btn-primary">View Selected Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="section" id="featured-work" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge" style="margin-bottom: var(--space-2xs);">Portfolio</span>
+          <h2 class="section-title">Selected Work</h2>
+          <p class="text-muted">Featured UX/UI case studies and built products.</p>
+        </div>
+
+        <!-- Dynamic Project Grid Container -->
+        <div id="featured-grid" class="grid grid-3-col">
+          <!-- Populated dynamically by JS -->
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);">
+          <a href="work.html" class="btn btn-secondary">
+            View All Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Building Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge" style="margin-bottom: var(--space-2xs);">Ship Log Projects</span>
+          <h2 class="section-title">Currently Building</h2>
+          <p class="text-muted">Active projects demonstrating design into frontend implementation.</p>
+        </div>
+
+        <div class="grid grid-2-col">
+          <!-- SpendLog Card -->
+          <article class="project-card" style="background: var(--bg-surface);">
+            <div class="card-content">
+              <div class="card-header">
+                <span class="card-category">Built Product</span>
+                <span class="text-small text-muted font-mono">2026</span>
+              </div>
+              <h3 class="card-title">SpendLog</h3>
+              <p class="card-description">
+                An expense tracking web application demonstrating the transition from UI/UX design into frontend implementation with HTML, CSS, and Vanilla JS.
+              </p>
+              <div class="card-tags">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Frontend</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a href="case-study.html?id=spendlog" class="btn btn-primary text-small">View Case Study</a>
+                <span class="text-small text-muted" style="margin-left: auto;">Live Demo coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Portfolio Project Card -->
+          <article class="project-card" style="background: var(--bg-surface);">
+            <div class="card-content">
+              <div class="card-header">
+                <span class="card-category">Ship Log Project</span>
+                <span class="text-small text-muted font-mono">2026</span>
+              </div>
+              <h3 class="card-title">Personal Portfolio Website</h3>
+              <p class="card-description">
+                Designing and building my personal portfolio using standard browser technologies, modular data structures, and AI-assisted workflows.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Design System</span>
+                <span class="tag">Vanilla Web</span>
+                <span class="tag">AI Workflow</span>
+              </div>
+              <div class="card-actions">
+                <a href="shiplog.html" class="btn btn-secondary text-small">Read Build Journal</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Approach Section -->
+    <section class="section" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge" style="margin-bottom: var(--space-2xs);">Philosophy</span>
+          <h2 class="section-title">Working Approach</h2>
+          <p class="text-muted">How I approach digital products from concept to implementation.</p>
+        </div>
+
+        <div class="grid grid-3-col">
+          <div style="padding: var(--space-md); background-color: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <div class="font-mono text-small text-muted" style="margin-bottom: var(--space-xs);">01 / DISCOVERY</div>
+            <h3 style="margin-bottom: var(--space-xs);">Design & UX Strategy</h3>
+            <p class="text-small text-muted">
+              Understanding user needs, defining problem statements, and crafting clear wireframes, information architecture, and visual hierarchy.
+            </p>
+          </div>
+
+          <div style="padding: var(--space-md); background-color: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <div class="font-mono text-small text-muted" style="margin-bottom: var(--space-xs);">02 / PRODUCT THINKING</div>
+            <h3 style="margin-bottom: var(--space-xs);">System & Interaction Flow</h3>
+            <p class="text-small text-muted">
+              Balancing user friction with clear interaction patterns, reusable design systems, and thoughtful interface component choices.
+            </p>
+          </div>
+
+          <div style="padding: var(--space-md); background-color: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <div class="font-mono text-small text-muted" style="margin-bottom: var(--space-xs);">03 / BUILDING</div>
+            <h3 style="margin-bottom: var(--space-xs);">Frontend Implementation</h3>
+            <p class="text-small text-muted">
+              Translating interface designs into clean, semantic HTML5, modern CSS custom properties, and beginner-readable vanilla JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="section" id="contact" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
+      <div class="container text-center" style="text-align: center; max-width: 640px;">
+        <span class="badge" style="margin-bottom: var(--space-xs);">Get in Touch</span>
+        <h2 class="section-title" style="margin-bottom: var(--space-sm);">Let's Work Together</h2>
+        <p class="text-muted" style="margin-bottom: var(--space-lg);">
+          Interested in collaboration, design inquiries, or product conversations? Reach out directly via email:
+        </p>
+        <a href="mailto:liasutosin@gmail.com" class="btn btn-primary font-mono" style="font-size: 1rem; padding: 0.875rem 1.75rem;">
+          liasutosin@gmail.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="font-family: var(--font-heading); font-size: 1rem; display: block; margin-bottom: 4px;">Tosin Liasu</strong>
+        <p class="text-small text-muted" style="margin-bottom: 0;">UI/UX Designer & Product Builder</p>
+      </div>
+
+      <ul class="footer-socials">
+        <li><a href="mailto:liasutosin@gmail.com">Email</a></li>
+        <li><a href="https://be.net/tl332" target="_blank" rel="noopener">Behance</a></li>
+      </ul>
+
+      <div class="footer-copy">
+        &copy; 2026 Tosin Liasu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Data Script Initialization -->
+  <script type="module">
+    import { getFeaturedProjects } from './js/data/projects.js';
+    import { renderProjectGrid } from './js/renderers.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const featuredGrid = document.getElementById('featured-grid');
+      if (featuredGrid) {
+        const featured = getFeaturedProjects();
+        renderProjectGrid(featuredGrid, featured);
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

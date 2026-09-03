@@ -30,3 +30,17 @@
 4. **Beginner-Readable Rendering Utilities**: Built `js/renderers.js` containing clear template string functions (`renderProjectCard`, `renderProjectGrid`, `renderCaseStudy`, `renderShipLogEntries`).
 5. **Interactive Navigation**: Implemented `js/main.js` handling mobile navigation menu toggle and active page link highlighting.
 6. **Documentation**: Wrote comprehensive `README.md` documenting step-by-step instructions on how to add, reorder, or update projects without touching component code.
+
+---
+
+## 2026-09-03 — Stage 3: Homepage Construction (index.html)
+
+### Key Implementation Milestones
+1. **Homepage HTML Shell (`index.html`)**: Constructed semantic HTML structure featuring:
+   - Header with brand logo mark and navigation links.
+   - Hero Section communicating primary positioning (*UI/UX Designer expanding into frontend & AI workflows*) and progression model (*DESIGN → PRODUCT THINKING → BUILDING → LEARNING*).
+   - Selected Work Grid dynamically rendered from `js/data/projects.js` using `renderProjectGrid()`.
+   - Currently Building section highlighting SpendLog and the Personal Portfolio website.
+   - Working Approach section outlining 3 core pillars (Discovery, Product Thinking, Building).
+   - Contact CTA & Footer featuring exact clickable `mailto:liasutosin@gmail.com` email link and Behance profile link (`be.net/tl332`).
+
