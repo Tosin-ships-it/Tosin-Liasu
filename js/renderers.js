@@ -7,10 +7,6 @@
  * Creates an HTML string for a single project card.
  */
 export function renderProjectCard(project) {
-  const tagsHTML = (project.tags || [])
-    .map(tag => `<span class="tag">${tag}</span>`)
-    .join('');
-
   const liveLinkHTML = project.links.liveDemo 
     ? `<a href="${project.links.liveDemo}" class="btn btn-secondary text-small" target="_blank" rel="noopener">Live Demo</a>` 
     : '';
@@ -31,7 +27,6 @@ export function renderProjectCard(project) {
         </div>
         <h3 class="card-title">${project.title}</h3>
         <p class="card-description">${project.shortDescription}</p>
-        <div class="card-tags">${tagsHTML}</div>
         <div class="card-actions">
           <a href="${project.links.caseStudy}" class="btn btn-primary text-small">View Case Study</a>
           ${liveLinkHTML}

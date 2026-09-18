@@ -45,19 +45,74 @@
       </div>
     </section>
 
-    <!-- Contact Cards Section -->
+    <!-- Contact Form & Cards Section -->
     <section class="section" style="padding-top: 0; padding-bottom: var(--space-3xl);">
       <div class="container">
+        <!-- Main Formspree Contact Form -->
+        <div class="contact-form-container">
+          <div class="contact-form-card">
+            <h2 style="font-size: var(--font-size-h3); margin-bottom: var(--space-xs);">Send a Message</h2>
+            <p class="text-small text-muted" style="margin-bottom: var(--space-lg);">
+              Fill out the form below to get in touch. I will respond to your message as soon as possible.
+            </p>
+
+            <form class="contact-form" action="https://formspree.io/f/xaennlrw" method="POST" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Name <span class="required-asterisk" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  required 
+                  placeholder="Your name" 
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email <span class="required-asterisk" aria-hidden="true">*</span></label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  required 
+                  placeholder="your.email@example.com" 
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required-asterisk" aria-hidden="true">*</span></label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-input form-textarea" 
+                  rows="5" 
+                  required 
+                  placeholder="Tell me about your project, inquiry, or idea..."
+                ></textarea>
+              </div>
+
+              <div class="form-status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Secondary Contact Options Grid -->
         <div class="grid grid-3-col">
           <!-- Primary Email Card -->
           <div class="contact-card">
-            <div class="font-mono text-small text-muted" style="margin-bottom: var(--space-xs);">PRIMARY CONTACT</div>
+            <div class="font-mono text-small text-muted" style="margin-bottom: var(--space-xs);">DIRECT EMAIL</div>
             <h3 style="margin-bottom: var(--space-xs);">Email</h3>
             <p class="text-small text-muted contact-card-body">
               Direct email communication for design inquiries, product collaborations, or frontend projects.
             </p>
-            <a href="mailto:liasutosin@gmail.com" class="btn btn-primary font-mono text-small" style="word-break: break-all;">
-              liasutosin@gmail.com
+            <a href="mailto:Liasutosin@gmail.com" class="btn btn-secondary font-mono text-small" style="word-break: break-all;">
+              Liasutosin@gmail.com
             </a>
           </div>
 

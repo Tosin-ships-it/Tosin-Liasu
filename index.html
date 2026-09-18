@@ -68,7 +68,7 @@
 
         <div class="hero-portrait-wrapper">
           <div class="hero-portrait-frame">
-            <img src="assets/images/IMG_8954.jpeg" alt="Tosin Liasu — UI/UX Designer & Product Builder" class="hero-portrait-img" loading="eager">
+            <img src="assets/images/tosin-liasu.jpeg" alt="Tosin Liasu — UI/UX Designer & Product Builder" class="hero-portrait-img" loading="eager">
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
 
         <div style="text-align: center; margin-top: var(--space-2xl);">
           <a href="work.html" class="btn btn-secondary">
-            View All Work
+            View All Projects
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
@@ -124,11 +124,6 @@
               <p class="card-description">
                 An expense tracking web application demonstrating the transition from UI/UX design into frontend implementation with HTML, CSS, and Vanilla JS.
               </p>
-              <div class="card-tags">
-                <span class="tag">UI/UX Design</span>
-                <span class="tag">Frontend</span>
-                <span class="tag">JavaScript</span>
-              </div>
               <div class="card-actions">
                 <a href="case-study.html?id=spendlog" class="btn btn-primary text-small">View Case Study</a>
                 <span class="text-small text-muted" style="margin-left: auto;">Live Demo coming soon</span>
@@ -150,11 +145,6 @@
               <p class="card-description">
                 Designing and building my personal portfolio using standard browser technologies, modular data structures, and AI-assisted workflows.
               </p>
-              <div class="card-tags">
-                <span class="tag">Design System</span>
-                <span class="tag">Vanilla Web</span>
-                <span class="tag">AI Workflow</span>
-              </div>
               <div class="card-actions">
                 <a href="shiplog.html" class="btn btn-secondary text-small">Read Build Journal</a>
               </div>
@@ -201,17 +191,64 @@
       </div>
     </section>
 
-    <!-- Contact CTA Section (Light Lavender Treatment) -->
+    <!-- Contact CTA Section (Formspree Powered) -->
     <section class="section section-contact" id="contact" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
-      <div class="container text-center" style="text-align: center; max-width: 640px;">
+      <div class="container text-center" style="max-width: 600px;">
         <span class="badge" style="margin-bottom: var(--space-xs);">Get in Touch</span>
         <h2 class="section-title" style="margin-bottom: var(--space-sm);">Let's Work Together</h2>
         <p class="text-muted" style="margin-bottom: var(--space-lg);">
-          Interested in collaboration, design inquiries, or product conversations? Reach out directly via email:
+          Interested in collaboration, design inquiries, or product conversations? Send a message directly below:
         </p>
-        <a href="mailto:liasutosin@gmail.com" class="btn btn-primary font-mono" style="font-size: 1rem; padding: 0.875rem 1.75rem;">
-          liasutosin@gmail.com
-        </a>
+
+        <div class="contact-form-card" style="text-align: left;">
+          <form class="contact-form" action="https://formspree.io/f/xaennlrw" method="POST" novalidate>
+            <div class="form-group">
+              <label for="home-contact-name" class="form-label">Name <span class="required-asterisk" aria-hidden="true">*</span></label>
+              <input 
+                type="text" 
+                id="home-contact-name" 
+                name="name" 
+                class="form-input" 
+                required 
+                placeholder="Your name" 
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="home-contact-email" class="form-label">Email <span class="required-asterisk" aria-hidden="true">*</span></label>
+              <input 
+                type="email" 
+                id="home-contact-email" 
+                name="email" 
+                class="form-input" 
+                required 
+                placeholder="your.email@example.com" 
+                autocomplete="email"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="home-contact-message" class="form-label">Message <span class="required-asterisk" aria-hidden="true">*</span></label>
+              <textarea 
+                id="home-contact-message" 
+                name="message" 
+                class="form-input form-textarea" 
+                rows="4" 
+                required 
+                placeholder="Tell me about your project, inquiry, or idea..."
+              ></textarea>
+            </div>
+
+            <div class="form-status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <p class="text-small text-muted" style="margin-top: var(--space-md); margin-bottom: 0;">
+          Or email directly: <a href="mailto:Liasutosin@gmail.com" class="font-mono" style="color: var(--accent-primary);">Liasutosin@gmail.com</a>
+        </p>
       </div>
     </section>
   </main>
@@ -225,7 +262,7 @@
       </div>
 
       <ul class="footer-socials">
-        <li><a href="mailto:liasutosin@gmail.com">Email</a></li>
+        <li><a href="mailto:Liasutosin@gmail.com">Email</a></li>
         <li><a href="https://github.com/Tosin-ships-it" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://be.net/tl332" target="_blank" rel="noopener">Behance</a></li>
       </ul>

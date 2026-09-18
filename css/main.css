@@ -619,6 +619,115 @@ a:hover {
   margin-bottom: var(--space-md);
 }
 
+/* --- Contact Form Styles --- */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form-card {
+  padding: var(--space-lg);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 640px) {
+  .contact-form-card {
+    padding: var(--space-xl);
+  }
+}
+
+.contact-form {
+  width: 100%;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2xs);
+}
+
+.required-asterisk {
+  color: var(--accent-primary);
+  margin-left: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.form-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.875rem 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .form-submit-btn {
+    width: auto;
+  }
+}
+
+.form-status {
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+  display: none;
+  line-height: var(--line-height-body);
+}
+
+.form-status:not(:empty) {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.form-status-success {
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.form-status-error {
+  background-color: #FEF2F2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+}
+
 /* --- Footer --- */
 .site-footer {
   background-color: var(--bg-primary);

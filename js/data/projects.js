@@ -8,11 +8,39 @@
 
 export const projects = [
   {
+    id: "schoolpass",
+    title: "SchoolPass",
+    category: "UI/UX / Product Design",
+    featured: true,
+    order: 1,
+    tagline: "A school-parent platform that brings school information and child records into one place.",
+    shortDescription: "A school-parent platform that brings school information and your child’s records into one place.",
+    role: "UI/UX Designer",
+    year: "Incoming",
+    tools: ["Figma", "UI/UX Design"],
+    coverImage: "assets/images/projects/schoolpass/cover.jpg",
+    coverAlt: "SchoolPass student access platform cover",
+    tags: ["UI/UX Design", "Product Design"],
+    links: {
+      caseStudy: "case-study.html?id=schoolpass",
+      liveDemo: "",
+      github: "",
+      behance: ""
+    },
+    caseStudy: {
+      overview: "SchoolPass is a school-parent platform bringing school information and student records into a single unified interface.",
+      context: "Product design project focused on streamlining communication between schools and parents.",
+      problem: "Parents often navigate fragmented portals and communications to track school updates and student records.",
+      myRole: "UI/UX Designer responsible for interface layouts, screen flows, and visual hierarchy.",
+      outcomes: "Designed a clear, modern platform concept for school information management."
+    }
+  },
+  {
     id: "spendlog",
     title: "SpendLog",
     category: "Built Product",
     featured: true,
-    order: 1,
+    order: 2,
     tagline: "Personal expense tracking designed and built from scratch.",
     shortDescription: "An expense tracking web application demonstrating the transition from UI/UX design into frontend implementation.",
     role: "UI/UX Designer & Frontend Developer",
@@ -57,11 +85,11 @@ export const projects = [
     category: "UI/UX / Product Design",
     categoryBadge: "ux-case-study",
     featured: true,
-    order: 2,
+    order: 3,
     tagline: "Product design case study focusing on interaction flow and UI layout.",
     shortDescription: "A UI/UX design project exploring user flows, structured interface layouts, and design system components.",
     role: "UI/UX Designer",
-    year: "2025",
+    year: "2026",
     tools: ["Figma", "Wireframing", "UI Design"],
     coverImage: "assets/images/projects/the-force/cover.jpg",
     coverAlt: "The Force product design case study cover",
@@ -90,11 +118,39 @@ export const projects = [
     }
   },
   {
+    id: "whisk",
+    title: "Whisk",
+    category: "UI/UX / Product Design",
+    featured: false,
+    order: 4,
+    tagline: "Culinary recipe discovery and meal planning experience.",
+    shortDescription: "A recipe discovery and meal planning web application designed for intuitive kitchen navigation and recipe organization.",
+    role: "UI/UX Designer",
+    year: "2026",
+    tools: ["Figma", "Visual Design", "UI Design"],
+    coverImage: "assets/images/projects/whisk/cover.jpg",
+    coverAlt: "Whisk recipe discovery web application cover",
+    tags: ["UI/UX Design", "Product Design"],
+    links: {
+      caseStudy: "case-study.html?id=whisk",
+      liveDemo: "",
+      github: "",
+      behance: ""
+    },
+    caseStudy: {
+      overview: "Whisk is a recipe discovery and meal planning interface design exploration.",
+      context: "Product design case study exploring digital kitchen workflows.",
+      problem: "Designing a clear interface for saving and organizing culinary recipes.",
+      myRole: "UI/UX Designer responsible for interface layout and user flows.",
+      outcomes: "Created a modern culinary web app UI concept."
+    }
+  },
+  {
     id: "ecochic",
     title: "Ecochic",
     category: "UI/UX / Visual Design",
-    featured: true,
-    order: 3,
+    featured: false,
+    order: 5,
     tagline: "Visual UI design exploration featuring editorial typography and storefront layout.",
     shortDescription: "A visual design project showcasing typography choices, spatial hierarchy, and clean product cards.",
     role: "UI/Visual Designer",
