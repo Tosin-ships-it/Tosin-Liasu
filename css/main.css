@@ -774,6 +774,64 @@ a:hover {
   }
 }
 
+/* Section Anchor Scroll Offset for Sticky Header */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Split About Section Layout */
+.about-split-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .about-split-grid {
+    grid-template-columns: 1.35fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+/* Split Contact Section Layout */
+.contact-split-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .contact-split-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+/* Contact Cards Inner Layout: 2 Cards Row 1 + 1 Card Row 2 */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xs);
+}
+
+@media (min-width: 540px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-card-wide {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Process Editorial Grid Layout */
+@media (min-width: 640px) {
+  .process-editorial-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* ===================================================================
    5. ACCESSIBILITY & REDUCED MOTION
    =================================================================== */
